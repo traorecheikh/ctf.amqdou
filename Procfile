@@ -1,1 +1,1 @@
-gunicorn Internal:app
+gunicorn app:app
