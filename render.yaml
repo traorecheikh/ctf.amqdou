@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-host-header-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn Internal:app"
+    plan: free
+    region: oregon
+    branch: main
